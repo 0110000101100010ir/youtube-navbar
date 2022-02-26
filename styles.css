@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main Container */
+.container {
+    /* background-color: cadetblue; */
+    height: 35px;
+    margin: 12px 0;
+    display: flex;
+}
+
+/* Three Parts */
+.left-part {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: brown; */
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.right-part {
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Left Part */
+.hamburger-menu {
+    font-size: 2rem;
+    margin: 0 2.8rem;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.logo-svg {
+    width: 9rem;
+    font-size: 2rem;
+    align-self: center;
+    margin-right: 0.4rem;
+}
+
+
+.country-code {
+    align-self: flex-start;
+}
+
+
+/* Search */
+
+.search-breakpoint {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+}
+.search-input {
+    width: 40%;    
+}
+.search-input > input {
+    padding: 1.2rem;
+    width: 100%;
+    border: 1px solid rgb(228, 212, 212);
+}
+
+.search-btn > button {
+    padding: 1.2rem 2.5rem;
+    border-radius: 0;
+    border: 1px solid rgb(228, 212, 212);
+}
+
+.search-btn i {
+    font-size: 1.5rem;
+}
+
+.search-mic {
+    margin-left: 1.5rem;
+    font-size: 2rem;
+}
+
+/* Right Part */
+
+.right-part-breakpoint {
+    display: none;
+}
+
+.right-part i {
+    font-size: 2rem;
+    margin-right: 2.2rem;
+}
+
+.user > img {
+    border-radius: 100%;
+    width: 4rem;
+    margin-right: 2.2rem;
+}
+
+
+@media only screen and (max-width: 657px) {
+    .right-part-breakpoint {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-mic {
+        margin-left: 0;
+    }
+
+    .search-breakpoint {
+        display: none;
+    }
+  }
